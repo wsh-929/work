@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>提交完毕</title>
+  <style>
+    /* 让整个页面铺满屏幕 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      /* 核心：让矩形在网页正中间 */
+      display: flex;
+      justify-content: center; /* 水平居中 */
+      align-items: center;     /* 垂直居中 */
+    }
+
+    /* 矩形样式 + 文字居中 */
+    .rect {
+      width: 260px;
+      height: 120px;
+      border: 2px solid #333;
+      background: #f5f5f5;
+      
+      /* 文字在矩形内居中 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="rect"><h2>提交成功！</h2></div>
+</body>
+</html>

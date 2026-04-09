@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集 | 前端/网页设计</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: "微软雅黑";}
+        body {background: #f0f2f5; text-align: center; padding: 40px 20px;}
+        
+        /* 头像样式 */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto;
+            object-fit: cover;
+            display: block;
+            border: 3px solid #1677ff;
+        }
+
+        .name {font-size: 28px; margin: 20px 0; color: #333;}
+        .skill {color: #666; margin-bottom: 40px; font-size: 16px;}
+        /* 新增：技能标签样式 */
+        .skill-tag {
+            display: inline-block;
+            background: #e8f3ff;
+            color: #1677ff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 0 5px 8px;
+        }
+        .projects {max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 25px; justify-content: center;}
+        .project {
+            width: 280px; 
+            background: white; 
+            padding: 25px; 
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        /* 新增：hover动效 */
+        .project:hover {transform: translateY(-5px);}
+        .project h3 {margin-bottom: 15px; color: #1677ff; font-size: 20px;}
+        .project p {color: #666; margin-bottom: 15px;}
+        /* 新增：按钮样式 */
+        .project a {
+            display: inline-block;
+            text-decoration: none;
+            background: #1677ff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .project a:hover {background: #005ed0;}
+        /* 新增：页脚备注 */
+        .footer {margin-top: 60px; color: #999; font-size: 14px;}
+    </style>
+</head>
+<body>
+    <img src="avatar.jpg" class="avatar" alt="个人头像">
+
+    <div class="name">前端/网页设计 | 作品集</div>
+    <div class="skill">
+        核心技能：
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">响应式布局</span>
+        <span class="skill-tag">Flex布局</span>
+        <span class="skill-tag">网页制作</span>
+    </div>
+
+    <div class="projects">
+        <div class="project">
+            <h3>企业官网首页</h3>
+            <a href="1.html" target="_blank">查看演示</a>
+        </div>
+        <div class="project">
+            <h3>活动报名页面</h3>
+            <a href="2.html" target="_blank">查看演示</a>
+        </div>
+        <div class="project">
+            <h3>响应式展示页面</h3>
+            <a href="#" onclick="alert('项目开发中，敬请期待！')">查看演示</a>
+        </div>
+    </div>
+
+    <div class="footer">个人作品集 | 网页设计与开发</div>
+</body>
+</html>
